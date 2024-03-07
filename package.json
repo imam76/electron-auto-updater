@@ -1,6 +1,6 @@
 {
   "name": "electron-auto-updater",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "main": "./public/electron.js",
   "dependencies": {
@@ -45,7 +45,7 @@
   },
   "build": {
     "appId": "com.iceape.sayhi",
-    "productionName": "Version Test Say Hi",
+    "productName": "electron-auto-updater",
     "copyright": "imam76",
     "files": [
       "build/**/*",
