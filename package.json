@@ -48,8 +48,8 @@
     "productName": "electron-auto-updater",
     "copyright": "imam76",
     "files": [
-      "!build/**/*",
-      "!node_modules/**/*"
+      "build/**/*",
+      "node_modules/**/*"
     ],
     "mac": {
       "target": {
