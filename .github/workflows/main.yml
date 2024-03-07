@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        
+
     steps:
     - uses: actions/checkout@v2
     - name: Setup Node.js
@@ -23,10 +23,11 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Build and Release
-      uses: samuelmeuli/action-electron-builder@v1
-      with:
-        github_token: ${{ secrets.GH_TOKEN }}
-        # Opsi tambahan jika dibutuhkan
+    - name: Publish releases
       env:
-        NODE_OPTIONS: '--max_old_space_size=4096'
+          # These values are used for auto updates signing
+         github_token: ${{ secrets.GH_TOKEN }}
+      run: |
+          npm run postinstall
+          npm run build
+          npm exec electron-builder -- --publish always --win --mac --linux

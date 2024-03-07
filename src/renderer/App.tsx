@@ -8,7 +8,7 @@ function Hello() {
       <div className="Hello">
         <img width="200" alt="icon" src={icon} />
       </div>
-      INI APP UDAH TER BARU 0.0.14
+      INI APP UDAH TER BARU 0.0.16
     </div>
   );
 }
