@@ -1,6 +1,6 @@
 {
   "name": "electron-auto-updater",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "private": true,
   "main": "./public/electron.js",
   "dependencies": {
@@ -49,6 +49,8 @@
     "appId": "com.iceape.sayhi",
     "productName": "electron-auto-updater",
     "copyright": "imam76",
+    "asar": true,
+    "asarUnpack": "**\\*.{node,dll}",
     "files": [
       "build/**/*",
       "node_modules/**/*"
@@ -61,7 +63,12 @@
           "x64"
         ]
       },
-      "type": "distribution"
+      "type": "distribution",
+      "publish": {
+        "provider": "github",
+        "owner": "imam76",
+        "repo": "electron-auto-updater"
+      }
     },
     "dmg": {
       "contents": [
@@ -80,13 +87,23 @@
     "win": {
       "target": [
         "nsis"
-      ]
+      ],
+      "publish": {
+        "provider": "github",
+        "owner": "imam76",
+        "repo": "electron-auto-updater"
+      }
     },
     "linux": {
       "target": [
         "AppImage"
       ],
-      "category": "Development"
+      "category": "Development",
+      "publish": {
+        "provider": "github",
+        "owner": "imam76",
+        "repo": "electron-auto-updater"
+      }
     },
     "publish": {
       "provider": "github",
