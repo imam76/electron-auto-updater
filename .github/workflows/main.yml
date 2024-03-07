@@ -1,0 +1,25 @@
+name: Build and Release
+
+on:
+  push:
+    branches:
+      - main  # Atau branch yang kamu gunakan
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14  # Gunakan versi Node.js yang sesuai
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build and Release
+      uses: samuelmeuli/action-electron-builder@v1
+      with:
+        github_token: ${{ secrets.GH_TOKEN }}
+        # Opsi tambahan jika dibutuhkan
