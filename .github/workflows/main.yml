@@ -23,3 +23,5 @@ jobs:
       with:
         github_token: ${{ secrets.GH_TOKEN }}
         # Opsi tambahan jika dibutuhkan
+      env:
+        NODE_OPTIONS: '--max_old_space_size=4096'
