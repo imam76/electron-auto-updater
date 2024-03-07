@@ -2,8 +2,8 @@ name: Build and Release
 
 on:
   push:
-    branches:
-      - main  # Atau branch yang kamu gunakan
+    tags:
+      - 'v*'
 
 jobs:
   release:
