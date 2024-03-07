@@ -18,7 +18,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: 16  # Gunakan versi Node.js yang sesuai
+        node-version: 14  # Gunakan versi Node.js yang sesuai
 
     - name: Install Dependencies
       run: npm install

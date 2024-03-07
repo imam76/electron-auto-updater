@@ -1,19 +1,17 @@
 {
   "name": "electron-auto-updater",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": true,
   "main": "./public/electron.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "electron-updater": "^6.1.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "electron-debug": "^3.2.0",
-    "electron-log": "^4.4.8",
-    "electron-updater": "^6.1.8"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
