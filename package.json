@@ -50,22 +50,13 @@
       "node_modules/**/*"
     ],
     "mac": {
-      "target": "dmg",
-      "publish": {
-        "provider": "github"
-      }
+      "target": "dmg"
     },
     "win": {
-      "target": "nsis",
-      "publish": {
-        "provider": "github"
-      }
+      "target": "nsis"
     },
     "linux": {
-      "target": "AppImage",
-      "publish": {
-        "provider": "github"
-      }
+      "target": "AppImage"
     },
     "publish": {
       "provider": "github",
