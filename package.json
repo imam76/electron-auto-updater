@@ -1,6 +1,6 @@
 {
   "name": "electron-auto-updater",
-  "version": "0.1.7",
+  "version": "0.0.8",
   "private": true,
   "main": "./public/electron.js",
   "dependencies": {
