@@ -2,9 +2,6 @@ const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const { autoUpdater } = require("electron-updater");
 const path = require('node:path')
 
-autoUpdater.logger.transports.file.level = "info"
-
-
 function sendStatusToWindow(text) {
   log.info(text);
   win.webContents.send(text); // send notification to UI about Update
